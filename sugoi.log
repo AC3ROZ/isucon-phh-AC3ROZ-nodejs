@@ -1,0 +1,37 @@
+listening on port 3000
+Please access to http://localhost:3000/
+{ domains: 
+   { 'example.cf': 84,
+     'example.gifts': 61,
+     'example.help': 99,
+     'example.il': 74,
+     'example.loans': 74,
+     'example.movie': 75,
+     'example.poker': 88,
+     'example.post': 81,
+     'example.shoes': 80,
+     'example.vodka': 69 },
+  userAgents: 
+   { Chrome: 377,
+     Edge: 31,
+     Firefox: 74,
+     'Internet Explorer': 49,
+     Opera: 126,
+     Safari: 72,
+     Vivaldi: 56 },
+  oss: 
+   { Android: 313,
+     ChromeOS: 3,
+     iPad: 30,
+     iPhone: 45,
+     Linux: 52,
+     'Mac OSX': 64,
+     'Windows 10': 84,
+     'Windows 7': 49,
+     'Windows 8': 58,
+     'Windows 8.1': 62,
+     'Windows Phone OS': 13,
+     'Windows Vista': 8,
+     'Windows XP': 4 } }
+GET / 304 - - 43.072 ms
+GET /index.css 304 - - 2.418 ms
