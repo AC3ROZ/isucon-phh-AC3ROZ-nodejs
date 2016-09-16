@@ -76,8 +76,6 @@ app.get('/', function(req, res) {
     for(var i = 0; i < rows.length; i++) {
       oss[rows[i].os] = rows[i].count;
     }
-
-      console.log({ domains: domains, userAgents: userAgents, oss: oss });
     res.render('index', { domains: domains, userAgents: userAgents, oss: oss });
   });
 });

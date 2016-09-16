@@ -11,3 +11,4 @@ CREATE TABLE IF NOT EXISTS `phh-isu2016`.`access_logs` (
   `version` varchar(255)
 );
 ALTER TABLE `phh-isu2016`.`access_logs` ADD INDEX (`domain`);
+ALTER TABLE `phh-isu2016`.`access_logs` ADD INDEX (`path`);
