@@ -1,0 +1,20 @@
+{
+  "name": "phh-isu-app2016",
+  "version": "0.0.1",
+  "description": "Fast, Faster, Fastest",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "PHH",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "ejs": "^2.5.1",
+    "express": "^4.14.0",
+    "morgan": "^1.7.0",
+    "mysql": "^2.11.1",
+    "promise-mysql": "^1.3.2",
+    "woothee": "^1.5.0"
+  }
+}
