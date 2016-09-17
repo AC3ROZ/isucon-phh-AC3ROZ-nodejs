@@ -2,48 +2,21 @@
 
 const url = require('url');
 const express = require('express');
-const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const mysql = require('mysql');
-const pmysql = require('promise-mysql');
 
 const woothee = require('woothee');
 
 function html(){ return `<!DOCTYPE html><html> <head> <meta charset="UTF-8"> <link rel="stylesheet" href="/index.css"> <title>PHH アクセスカウンター</title> <script> window.onload = function(){ domain = document.getElementById("domain").innerText; document.getElementById("domain").innerText = Object.keys(JSON.parse(domain)).length; os= document.getElementById("os").innerText; document.getElementById("os").innerText = Object.keys(JSON.parse(os)).length; browser = document.getElementById("browser").innerText; document.getElementById("browser").innerText = Object.keys(JSON.parse(browser)).length; } </script> </head> <body> <h1>PHH アクセスカウンター</h1> <p>これまで、<b id="domain">${JSON.stringify(domains)}</b>個のドメイン、<b id="browser">${JSON.stringify(bro)}</b>種類のブラウザ、<b id="os">${JSON.stringify(oss)}</b>種類の OS のアクセスがありました。</p> </body></html>` };
 var app = express();
-var dict = [];
 var domains = {};
 var browsers = {};
 var urls = {};
 var oss = {};
 var bro = {};
 var pc_access = {};
-var db = mysql.createConnection({
-    host: process.env['DATABASE_HOST'] || 'localhost',
-    user: process.env['DATABASE_USERNANE'] || 'root',
-    password: process.env['DATABASE_PASSWORD'] || '',
-    database: process.env['DATABASE_NAME'] || 'phh-isu2016'
-});
 
-db.connect(function(err) {
-    if(err) {
-        console.error('データベースへの接続に失敗しました');
-        console.error(err.stack);
-        process.exit(1);
-    }
-});
-
-var pdb;
-pmysql.createConnection({
-    host: process.env['DATABASE_HOST'] || 'localhost',
-    user: process.env['DATABASE_USERNANE'] || 'root',
-    password: process.env['DATABASE_PASSWORD'] || '',
-    database: process.env['DATABASE_NAME'] || 'phh-isu2016'
-}).then(function(connection){
-    pdb = connection;
-});
-
-app.use(morgan('tiny'));
+// app.use(morgan('tiny'));
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
@@ -62,12 +35,12 @@ app.get('/', function(req, res) {
 });
 
 app.post('/reset', function(req, res) {
-    dict = [];
     domains = {};
     browsers = {};
     urls = {};
     oss = {};         
     bro = {};
+    pc_access = {};
     res.status(200).send('');
 });
 
@@ -101,14 +74,6 @@ app.post('/access', function(req, res) {
             pc_access[endpoint.host + endpoint.path] = 1;
         }
     }else { if(userAgent.category === 'pc') pc_access[endpoint.host + endpoint.path]++; }
-    dict.push(
-        { domain: endpoint.host,
-            path: endpoint.path,
-            category: userAgent.category,
-            user_agent: userAgent.name,
-            os: userAgent.os,
-            version: userAgent.version
-        }  );
     res.status(201).json({ ok: true });
 }
 );
