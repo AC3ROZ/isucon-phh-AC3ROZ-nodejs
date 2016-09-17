@@ -17,6 +17,7 @@ var browsers = {};
 var urls = {};
 var oss = {};
 var bro = {};
+var pc_access = {};
 var db = mysql.createConnection({
     host: process.env['DATABASE_HOST'] || 'localhost',
     user: process.env['DATABASE_USERNANE'] || 'root',
@@ -41,8 +42,6 @@ pmysql.createConnection({
 }).then(function(connection){
     pdb = connection;
 });
-
-app.set('view engine', 'ejs');
 
 app.use(morgan('tiny'));
 app.use(express.static('public'));
@@ -97,6 +96,11 @@ app.post('/access', function(req, res) {
     if(domains[endpoint.host] == undefined){
         domains[endpoint.host] = 1;
     }else { domains[endpoint.host]++; }
+    if(pc_access[endpoint.host + endpoint.path] == undefined){
+        if(userAgent.category === 'pc'){
+            pc_access[endpoint.host + endpoint.path] = 1;
+        }
+    }else { if(userAgent.category === 'pc') pc_access[endpoint.host + endpoint.path]++; }
     dict.push(
         { domain: endpoint.host,
             path: endpoint.path,
@@ -112,12 +116,11 @@ app.post('/access', function(req, res) {
 app.get('/count', function(req, res) {
     var endpoint = url.parse(req.query.url);
 
-    var filterd = dict.filter(val => val.domain == endpoint.host && val.path == endpoint.path);
-    var count = filterd.length;
-    var pc = filterd.filter(val => val.category == 'pc').length;
-    var smartphone = count - pc;
+    var url_count= urls[endpoint.host + endpoint.path];
+    var pc = pc_access[endpoint.host + endpoint.path];
+    var smartphone = url_count - pc;
     res.status(200).json({
-        count: count,
+        count: url_count,
         pc: pc,
         smartphone: smartphone});
 }
