@@ -17,10 +17,9 @@ var bro = {};
 var pc_access = {};
 
 // app.use(morgan('tiny'));
-app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-
+app.use(express.static('public'));
 app.use(function(req, res, next) {
     try {
         next();
@@ -70,11 +69,11 @@ app.post('/access', function(req, res) {
         domains[endpoint.host] = 1;
     }else { domains[endpoint.host]++; }
     if(pc_access[endpoint.host + endpoint.path] == undefined){
-        if(userAgent.category === 'pc'){
+        if(userAgent.category && userAgent.category === 'pc'){
             pc_access[endpoint.host + endpoint.path] = 1;
         }
-    }else { if(userAgent.category === 'pc') pc_access[endpoint.host + endpoint.path]++; }
-    res.status(201).json({ ok: true });
+    }else { if(userAgent.category && userAgent.category === 'pc') pc_access[endpoint.host + endpoint.path]++; }
+    res.status(201).send('{ "ok": true }');
 }
 );
 
@@ -84,10 +83,10 @@ app.get('/count', function(req, res) {
     var url_count= urls[endpoint.host + endpoint.path];
     var pc = pc_access[endpoint.host + endpoint.path];
     var smartphone = url_count - pc;
-    res.status(200).json({
+    res.status(200).send(JSON.stringify({
         count: url_count,
         pc: pc,
-        smartphone: smartphone});
+        smartphone: smartphone}));
 }
 );
 
@@ -97,7 +96,11 @@ app.get('/stats', function(req, res) {
         os: oss,
         user_agent:browsers
     };
-    res.status(200).json(stats);
+    res.status(200).send(JSON.stringify(
+        {url: urls,
+        os: oss,
+        user_agent:browsers}
+	));
 });
 
 app.listen(3000, function() {
