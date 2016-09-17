@@ -16,21 +16,11 @@ var pc_access = {};
 
 // app.use(morgan('tiny'));
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
+app.use(bodyParser.json({strict: false, inflate: false, }));
 app.use(express.static('public'));
-app.use(function(req, res, next) {
-    try {
-        next();
-    } catch(e) {
-        console.error(error.stack);
-        res.status(500).json({ error: error.message });
-    }
-});
-
 app.get('/', function(req, res) {
     res.status(200).send(html());
 });
-
 app.post('/reset', function(req, res) {
     domains = {};
     browsers = {};
@@ -47,22 +37,22 @@ app.post('/access', function(req, res) {
     var hostPath = endpoint.host + endpoint.path;
     var uName = userAgent.name;
     var uv = userAgent.name + ' ' + userAgent.version;
-    if(bro[uName] == undefined){
+    if(!bro[uName]){
         bro[uName] = 1;
     }else { bro[uName]++; }
-    if(browsers[uv] == undefined){
+    if(!browsers[uv]){
         browsers[uv] = 1;
     }else { browsers[uv]++; }
-    if(urls[hostPath] == undefined){
+    if(!urls[hostPath]){
         urls[hostPath] = 1;
     }else { urls[hostPath]++; }
-    if(oss[userAgent.os] == undefined){
+    if(!oss[userAgent.os]){
         oss[userAgent.os] = 1;
     }else { oss[userAgent.os]++; }
-    if(domains[endpoint.host] == undefined){
+    if(!domains[endpoint.host]){
         domains[endpoint.host] = 1;
     }else { domains[endpoint.host]++; }
-    if(pc_access[hostPath] == undefined){
+    if(!pc_access[hostPath]){
         if(userAgent.category && userAgent.category === 'pc'){
             pc_access[hostPath] = 1;
         }
