@@ -1,24 +1,23 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/Users/himanoa/.ndenv/versions/v4.4.4/bin/node',
-1 verbose cli   '/Users/himanoa/.ndenv/versions/v4.4.4/bin/npm',
-1 verbose cli   'start' ]
-2 info using npm@2.15.1
-3 info using node@v4.4.4
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'start' ]
+2 info using npm@3.10.3
+3 info using node@v6.6.0
 4 verbose stack Error: missing script: start
-4 verbose stack     at run (/Users/himanoa/.ndenv/versions/v4.4.4/lib/node_modules/npm/lib/run-script.js:142:19)
-4 verbose stack     at /Users/himanoa/.ndenv/versions/v4.4.4/lib/node_modules/npm/lib/run-script.js:58:5
-4 verbose stack     at /Users/himanoa/.ndenv/versions/v4.4.4/lib/node_modules/npm/node_modules/read-package-json/read-json.js:345:5
-4 verbose stack     at checkBinReferences_ (/Users/himanoa/.ndenv/versions/v4.4.4/lib/node_modules/npm/node_modules/read-package-json/read-json.js:309:45)
-4 verbose stack     at final (/Users/himanoa/.ndenv/versions/v4.4.4/lib/node_modules/npm/node_modules/read-package-json/read-json.js:343:3)
-4 verbose stack     at then (/Users/himanoa/.ndenv/versions/v4.4.4/lib/node_modules/npm/node_modules/read-package-json/read-json.js:113:5)
-4 verbose stack     at /Users/himanoa/.ndenv/versions/v4.4.4/lib/node_modules/npm/node_modules/read-package-json/read-json.js:300:12
-4 verbose stack     at /Users/himanoa/.ndenv/versions/v4.4.4/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:78:16
-4 verbose stack     at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:380:3)
-5 verbose cwd /Users/himanoa/app
-6 error Darwin 15.6.0
-7 error argv "/Users/himanoa/.ndenv/versions/v4.4.4/bin/node" "/Users/himanoa/.ndenv/versions/v4.4.4/bin/npm" "start"
-8 error node v4.4.4
-9 error npm  v2.15.1
+4 verbose stack     at run (/usr/lib/node_modules/npm/lib/run-script.js:151:19)
+4 verbose stack     at /usr/lib/node_modules/npm/lib/run-script.js:61:5
+4 verbose stack     at /usr/lib/node_modules/npm/node_modules/read-package-json/read-json.js:356:5
+4 verbose stack     at checkBinReferences_ (/usr/lib/node_modules/npm/node_modules/read-package-json/read-json.js:320:45)
+4 verbose stack     at final (/usr/lib/node_modules/npm/node_modules/read-package-json/read-json.js:354:3)
+4 verbose stack     at then (/usr/lib/node_modules/npm/node_modules/read-package-json/read-json.js:124:5)
+4 verbose stack     at /usr/lib/node_modules/npm/node_modules/read-package-json/read-json.js:311:12
+4 verbose stack     at /usr/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:78:16
+4 verbose stack     at tryToString (fs.js:455:3)
+4 verbose stack     at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:442:12)
+5 verbose cwd /home/isucon/app/isucon-phh-AC3ROZ-nodejs
+6 error Linux 4.4.0-36-generic
+7 error argv "/usr/bin/nodejs" "/usr/bin/npm" "start"
+8 error node v6.6.0
+9 error npm  v3.10.3
 10 error missing script: start
 11 error If you need help, you may report this error at:
 11 error     <https://github.com/npm/npm/issues>

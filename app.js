@@ -14,9 +14,7 @@ var oss = {};
 var bro = {};
 var pc_access = {};
 
-// app.use(morgan('tiny'));
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json({strict: false, inflate: false, }));
 app.use(express.static('public'));
 app.get('/', function(req, res) {
     res.status(200).send(html());

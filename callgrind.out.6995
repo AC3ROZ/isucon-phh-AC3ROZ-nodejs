@@ -1,0 +1,1678 @@
+events: ms hits
+summary: 1000 131
+fl=
+fn=setSamplingInterval :0
+0 0 0
+
+fl=/usr/lib/node_modules/nodegrind/node_modules/v8-profiler/v8-profiler.js
+fn=startProfiling v8-profiler.js:199
+199 0 0
+cfi=
+cfn=setSamplingInterval :0
+calls=0 0
+199 0 0
+
+fl=/usr/lib/node_modules/nodegrind/nodegrind.js
+fn=startCPU nodegrind.js:84
+84 0 0
+cfi=/usr/lib/node_modules/nodegrind/node_modules/v8-profiler/v8-profiler.js
+cfn=startProfiling v8-profiler.js:199
+calls=0 199
+84 0 0
+
+fl=vm.js
+fn=exports.runInThisContext vm.js:75
+75 229 30
+cfi=vm.js
+cfn=Script.runInThisContext vm.js:19
+calls=0 19
+75 30 4
+cfi=
+cfn=ContextifyScript :0
+calls=0 0
+75 7 1
+
+fl=bootstrap_node.js
+fn=runInThisContext bootstrap_node.js:403
+403 106 14
+
+fl=bootstrap_node.js
+fn=NativeModule.compile bootstrap_node.js:485
+485 0 0
+cfi=bootstrap_node.js
+cfn=runInThisContext bootstrap_node.js:403
+calls=0 403
+485 106 14
+cfi=url.js
+cfn= url.js:1
+calls=0 1
+485 7 1
+cfi=net.js
+cfn= net.js:1
+calls=0 1
+485 7 1
+cfi=tty.js
+cfn= tty.js:1
+calls=0 1
+485 22 3
+cfi=_http_outgoing.js
+cfn= _http_outgoing.js:1
+calls=0 1
+485 7 1
+cfi=_http_server.js
+cfn= _http_server.js:1
+calls=0 1
+485 7 1
+cfi=http.js
+cfn= http.js:1
+calls=0 1
+485 38 5
+cfi=crypto.js
+cfn= crypto.js:1
+calls=0 1
+485 22 3
+cfi=zlib.js
+cfn= zlib.js:1
+calls=0 1
+485 7 1
+cfi=child_process.js
+cfn= child_process.js:1
+calls=0 1
+485 7 1
+cfi=cluster.js
+cfn= cluster.js:1
+calls=0 1
+485 30 4
+cfi=console.js
+cfn= console.js:1
+calls=0 1
+485 15 2
+
+fl=bootstrap_node.js
+fn=NativeModule.require bootstrap_node.js:419
+419 0 0
+cfi=bootstrap_node.js
+cfn=NativeModule.compile bootstrap_node.js:485
+calls=0 485
+419 282 37
+
+fl=url.js
+fn= url.js:1
+1 0 0
+cfi=bootstrap_node.js
+cfn=NativeModule.require bootstrap_node.js:419
+calls=0 419
+1 7 1
+
+fl=native string.js
+fn=charCodeAt native string.js:50
+50 7 1
+
+fl=path.js
+fn=normalizeStringPosix path.js:78
+78 22 3
+cfi=native string.js
+cfn=charCodeAt native string.js:50
+calls=0 50
+78 7 1
+
+fl=path.js
+fn=resolve path.js:1133
+1133 7 1
+cfi=path.js
+cfn=normalizeStringPosix path.js:78
+calls=0 78
+1133 30 4
+
+fl=module.js
+fn=readPackage module.js:79
+79 0 0
+cfi=path.js
+cfn=resolve path.js:1133
+calls=0 1133
+79 7 1
+cfi=native json.js
+cfn=parse native json.js:61
+calls=0 61
+79 7 1
+
+fl=module.js
+fn=tryPackage module.js:101
+101 0 0
+cfi=path.js
+cfn=resolve path.js:1133
+calls=0 1133
+101 7 1
+cfi=module.js
+cfn=readPackage module.js:79
+calls=0 79
+101 15 2
+cfi=module.js
+cfn=tryFile module.js:0
+calls=0 0
+101 7 1
+cfi=module.js
+cfn=tryExtensions module.js:125
+calls=0 125
+101 15 2
+
+fl=module.js
+fn=Module._findPath module.js:137
+137 0 0
+cfi=path.js
+cfn=resolve path.js:1133
+calls=0 1133
+137 7 1
+cfi=module.js
+cfn=tryPackage module.js:101
+calls=0 101
+137 45 6
+cfi=fs.js
+cfn=realpathSync fs.js:1588
+calls=0 1588
+137 7 1
+cfi=module.js
+cfn=tryExtensions module.js:125
+calls=0 125
+137 22 3
+cfi=module.js
+cfn=stat module.js:23
+calls=0 23
+137 7 1
+
+fl=module.js
+fn=Module._resolveFilename module.js:441
+441 0 0
+cfi=module.js
+cfn=Module._findPath module.js:137
+calls=0 137
+441 91 12
+cfi=module.js
+cfn=Module._resolveLookupPaths module.js:300
+calls=0 300
+441 7 1
+
+fl=fs.js
+fn=tryStatSync fs.js:458
+458 7 1
+
+fl=fs.js
+fn=fs.readFileSync fs.js:494
+494 0 0
+cfi=fs.js
+cfn=tryStatSync fs.js:458
+calls=0 458
+494 7 1
+cfi=buffer.js
+cfn=Buffer.toString buffer.js:472
+calls=0 472
+494 7 1
+cfi=fs.js
+cfn=fs.closeSync fs.js:608
+calls=0 608
+494 7 1
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/express/lib/application.js
+fn= application.js:0
+0 7 1
+
+fl=
+fn=runInThisContext :0
+0 0 0
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/express/lib/application.js
+cfn= application.js:0
+calls=0 0
+0 7 1
+
+fl=vm.js
+fn=Script.runInThisContext vm.js:19
+19 22 3
+cfi=
+cfn=runInThisContext :0
+calls=0 0
+19 7 1
+
+fl=net.js
+fn= net.js:1
+1 7 1
+
+fl=tty.js
+fn= tty.js:1
+1 0 0
+cfi=bootstrap_node.js
+cfn=NativeModule.require bootstrap_node.js:419
+calls=0 419
+1 22 3
+
+fl=fs.js
+fn=realpathSync fs.js:1588
+1588 22 3
+cfi=fs.js
+cfn=fs.lstatSync fs.js:980
+calls=0 980
+1588 22 3
+
+fl=module.js
+fn=tryFile module.js:116
+116 0 0
+cfi=fs.js
+cfn=realpathSync fs.js:1588
+calls=0 1588
+116 38 5
+
+fl=module.js
+fn=tryExtensions module.js:125
+125 7 1
+cfi=module.js
+cfn=tryFile module.js:116
+calls=0 116
+125 30 4
+
+fl=module.js
+fn=Module._load module.js:398
+398 0 0
+cfi=bootstrap_node.js
+cfn=NativeModule.require bootstrap_node.js:419
+calls=0 419
+398 129 17
+cfi=module.js
+cfn=Module._resolveFilename module.js:441
+calls=0 441
+398 99 13
+cfi=module.js
+cfn=tryModuleLoad module.js:429
+calls=0 429
+398 4893 641
+
+fl=module.js
+fn=Module.require module.js:480
+480 0 0
+cfi=module.js
+cfn=Module._load module.js:398
+calls=0 398
+480 4290 562
+
+fl=internal/module.js
+fn=require module.js:17
+17 0 0
+cfi=module.js
+cfn=Module.require module.js:480
+calls=0 480
+17 4290 562
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/debug/debug.js
+fn= debug.js:1
+1 0 0
+cfi=internal/module.js
+cfn=require module.js:17
+calls=0 17
+1 7 1
+
+fl=module.js
+fn=Module._compile module.js:496
+496 0 0
+cfi=vm.js
+cfn=exports.runInThisContext vm.js:75
+calls=0 75
+496 267 35
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/debug/debug.js
+cfn= debug.js:1
+calls=0 1
+496 7 1
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/debug/node.js
+cfn= node.js:1
+calls=0 1
+496 53 7
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/on-finished/index.js
+cfn= index.js:1
+calls=0 1
+496 7 1
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/statuses/index.js
+cfn= index.js:1
+calls=0 1
+496 7 1
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/finalhandler/index.js
+cfn= index.js:1
+calls=0 1
+496 83 11
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/methods/index.js
+cfn= index.js:1
+calls=0 1
+496 38 5
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/express/lib/router/route.js
+cfn= route.js:1
+calls=0 1
+496 61 8
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/depd/index.js
+cfn= index.js:1
+calls=0 1
+496 7 1
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/express/lib/router/index.js
+cfn= index.js:1
+calls=0 1
+496 91 12
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/qs/lib/stringify.js
+cfn= stringify.js:1
+calls=0 1
+496 7 1
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/qs/lib/index.js
+cfn= index.js:1
+calls=0 1
+496 15 2
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/express/lib/middleware/query.js
+cfn= query.js:1
+calls=0 1
+496 22 3
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/http-errors/index.js
+cfn= index.js:1
+calls=0 1
+496 7 1
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/etag/index.js
+cfn= index.js:1
+calls=0 1
+496 38 5
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/mime/mime.js
+cfn= mime.js:1
+calls=0 1
+496 15 2
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/send/index.js
+cfn= index.js:1
+calls=0 1
+496 91 12
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/ipaddr.js/lib/ipaddr.js
+cfn= ipaddr.js:1
+calls=0 1
+496 7 1
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/proxy-addr/index.js
+cfn= index.js:1
+calls=0 1
+496 15 2
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/express/lib/utils.js
+cfn= utils.js:1
+calls=0 1
+496 137 18
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/express/lib/view.js
+cfn= view.js:1
+calls=0 1
+496 137 18
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/express/lib/application.js
+cfn= application.js:1
+calls=0 1
+496 343 45
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/mime-db/index.js
+cfn= index.js:1
+calls=0 1
+496 22 3
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/mime-types/index.js
+cfn= index.js:1
+calls=0 1
+496 38 5
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/accepts/index.js
+cfn= index.js:1
+calls=0 1
+496 53 7
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/type-is/index.js
+cfn= index.js:1
+calls=0 1
+496 7 1
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/express/lib/request.js
+cfn= request.js:1
+calls=0 1
+496 61 8
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/express/lib/response.js
+cfn= response.js:1
+calls=0 1
+496 15 2
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/serve-static/index.js
+cfn= index.js:1
+calls=0 1
+496 7 1
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/express/lib/express.js
+cfn= express.js:1
+calls=0 1
+496 450 59
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/express/index.js
+cfn= index.js:1
+calls=0 1
+496 450 59
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/chrome2calltree/node_modules/lodash/dist/lodash.js
+cfn= lodash.js:1
+calls=0 1
+496 53 7
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/chrome2calltree/index.js
+cfn= index.js:1
+calls=0 1
+496 99 13
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/memory-streams/node_modules/readable-stream/lib/_stream_readable.js
+cfn= _stream_readable.js:1
+calls=0 1
+496 7 1
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/memory-streams/node_modules/readable-stream/readable.js
+cfn= readable.js:1
+calls=0 1
+496 38 5
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/memory-streams/lib/ReadableStream.js
+cfn= ReadableStream.js:1
+calls=0 1
+496 38 5
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/memory-streams/index.js
+cfn= index.js:1
+calls=0 1
+496 38 5
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/nodegrind/nodegrind.js
+cfn= nodegrind.js:1
+calls=0 1
+496 160 21
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/woothee/release/woothee.js
+cfn= woothee.js:1
+calls=0 1
+496 7 1
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/iconv-lite/lib/index.js
+cfn= index.js:1
+calls=0 1
+496 15 2
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/raw-body/index.js
+cfn= index.js:1
+calls=0 1
+496 30 4
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/body-parser/lib/read.js
+cfn= read.js:1
+calls=0 1
+496 45 6
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/body-parser/lib/types/urlencoded.js
+cfn= urlencoded.js:1
+calls=0 1
+496 61 8
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/app.js
+cfn= app.js:1
+calls=0 1
+496 824 108
+cfi=/usr/lib/node_modules/nodegrind/nodegrind.js
+cfn= nodegrind.js:1
+calls=0 1
+496 832 109
+
+fl=module.js
+fn=Module._extensions..js module.js:563
+563 0 0
+cfi=fs.js
+cfn=fs.readFileSync fs.js:494
+calls=0 494
+563 15 2
+cfi=module.js
+cfn=Module._compile module.js:496
+calls=0 496
+563 4824 632
+cfi=internal/module.js
+cfn=stripBOM module.js:47
+calls=0 47
+563 7 1
+
+fl=module.js
+fn=Module.load module.js:464
+464 7 1
+cfi=module.js
+cfn=Module._extensions..js module.js:563
+calls=0 563
+464 4847 635
+cfi=module.js
+cfn=Module._nodeModulePaths module.js:259
+calls=0 259
+464 7 1
+cfi=module.js
+cfn=Module._extensions..json module.js:570
+calls=0 570
+464 22 3
+
+fl=module.js
+fn=tryModuleLoad module.js:429
+429 7 1
+cfi=module.js
+cfn=Module.load module.js:464
+calls=0 464
+429 4885 640
+
+fl=_stream_writable.js
+fn=WritableState _stream_writable.js:26
+26 7 1
+
+fl=_stream_writable.js
+fn=Writable _stream_writable.js:137
+137 0 0
+cfi=_stream_writable.js
+cfn=WritableState _stream_writable.js:26
+calls=0 26
+137 7 1
+
+fl=_stream_duplex.js
+fn=Duplex _stream_duplex.js:23
+23 0 0
+cfi=_stream_writable.js
+cfn=Writable _stream_writable.js:137
+calls=0 137
+23 7 1
+cfi=_stream_readable.js
+cfn=Readable _stream_readable.js:104
+calls=0 104
+23 7 1
+
+fl=net.js
+fn=Socket net.js:120
+120 0 0
+cfi=_stream_duplex.js
+cfn=Duplex _stream_duplex.js:23
+calls=0 23
+120 15 2
+
+fl=tty.js
+fn=WriteStream tty.js:43
+43 7 1
+cfi=net.js
+cfn=Socket net.js:120
+calls=0 120
+43 15 2
+
+fl=internal/process/stdio.js
+fn=createWritableStdioStream stdio.js:134
+134 7 1
+cfi=tty.js
+cfn=WriteStream tty.js:43
+calls=0 43
+134 22 3
+
+fl=internal/process/stdio.js
+fn=getStderr stdio.js:21
+21 0 0
+cfi=internal/process/stdio.js
+cfn=createWritableStdioStream stdio.js:134
+calls=0 134
+21 15 2
+
+fl=native string.js
+fn=split native string.js:280
+280 7 1
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/debug/debug.js
+fn=enable debug.js:136
+136 0 0
+cfi=native string.js
+cfn=split native string.js:280
+calls=0 280
+136 7 1
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/debug/node.js
+fn= node.js:1
+1 0 0
+cfi=internal/module.js
+cfn=require module.js:17
+calls=0 17
+1 30 4
+cfi=internal/process/stdio.js
+cfn=getStderr stdio.js:21
+calls=0 21
+1 15 2
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/debug/debug.js
+cfn=enable debug.js:136
+calls=0 136
+1 7 1
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/on-finished/index.js
+fn= index.js:1
+1 0 0
+cfi=internal/module.js
+cfn=require module.js:17
+calls=0 17
+1 7 1
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/statuses/index.js
+fn=forEachCode index.js:60
+60 7 1
+
+fl=native array.js
+fn=InnerArrayForEach native array.js:935
+935 7 1
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/statuses/index.js
+cfn=forEachCode index.js:60
+calls=0 60
+935 7 1
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/express/lib/router/index.js
+cfn= index.js:507
+calls=0 507
+935 7 1
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/http-errors/index.js
+cfn=forEachCode index.js:190
+calls=0 190
+935 7 1
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/mime-types/index.js
+cfn=forEachMimeType index.js:158
+calls=0 158
+935 15 2
+
+fl=native array.js
+fn=forEach native array.js:954
+954 0 0
+cfi=native array.js
+cfn=InnerArrayForEach native array.js:935
+calls=0 935
+954 45 6
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/statuses/index.js
+fn=populateStatusesMap index.js:57
+57 0 0
+cfi=native array.js
+cfn=forEach native array.js:954
+calls=0 954
+57 7 1
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/statuses/index.js
+fn= index.js:1
+1 0 0
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/statuses/index.js
+cfn=populateStatusesMap index.js:57
+calls=0 57
+1 7 1
+
+fl=module.js
+fn=Module._nodeModulePaths module.js:259
+259 0 0
+cfi=path.js
+cfn=resolve path.js:1133
+calls=0 1133
+259 7 1
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/finalhandler/index.js
+fn= index.js:1
+1 0 0
+cfi=internal/module.js
+cfn=require module.js:17
+calls=0 17
+1 83 11
+
+fl=
+fn=lstat :0
+0 22 3
+
+fl=fs.js
+fn=fs.lstatSync fs.js:980
+980 0 0
+cfi=
+cfn=lstat :0
+calls=0 0
+980 22 3
+
+fl=buffer.js
+fn=fromString buffer.js:182
+182 7 1
+
+fl=buffer.js
+fn=Buffer.from buffer.js:87
+87 0 0
+cfi=buffer.js
+cfn=fromString buffer.js:182
+calls=0 182
+87 7 1
+
+fl=_http_outgoing.js
+fn= _http_outgoing.js:1
+1 0 0
+cfi=buffer.js
+cfn=Buffer.from buffer.js:87
+calls=0 87
+1 7 1
+
+fl=_http_server.js
+fn= _http_server.js:1
+1 7 1
+
+fl=http.js
+fn= http.js:1
+1 0 0
+cfi=bootstrap_node.js
+cfn=NativeModule.require bootstrap_node.js:419
+calls=0 419
+1 38 5
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/methods/index.js
+fn= index.js:1
+1 0 0
+cfi=internal/module.js
+cfn=require module.js:17
+calls=0 17
+1 38 5
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/express/lib/router/route.js
+fn= route.js:1
+1 0 0
+cfi=internal/module.js
+cfn=require module.js:17
+calls=0 17
+1 53 7
+cfi=native array.js
+cfn=forEach native array.js:954
+calls=0 954
+1 7 1
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/depd/lib/compat/index.js
+fn=callSiteToString index.js:26
+26 7 1
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/depd/lib/compat/index.js
+fn=get index.js:59
+59 0 0
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/depd/lib/compat/index.js
+cfn=callSiteToString index.js:26
+calls=0 26
+59 7 1
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/depd/index.js
+fn= index.js:1
+1 0 0
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/depd/lib/compat/index.js
+cfn=get index.js:59
+calls=0 59
+1 7 1
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/depd/index.js
+fn=callSiteLocation index.js:251
+251 7 1
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/depd/index.js
+fn=depd index.js:106
+106 0 0
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/depd/index.js
+cfn=callSiteLocation index.js:251
+calls=0 251
+106 7 1
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/express/lib/router/index.js
+fn= index.js:507
+507 7 1
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/express/lib/router/index.js
+fn= index.js:1
+1 0 0
+cfi=internal/module.js
+cfn=require module.js:17
+calls=0 17
+1 76 10
+cfi=native array.js
+cfn=forEach native array.js:954
+calls=0 954
+1 7 1
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/depd/index.js
+cfn=depd index.js:106
+calls=0 106
+1 7 1
+
+fl=internal/module.js
+fn=stripBOM module.js:47
+47 7 1
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/qs/lib/stringify.js
+fn= stringify.js:1
+1 0 0
+cfi=internal/module.js
+cfn=require module.js:17
+calls=0 17
+1 7 1
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/qs/lib/index.js
+fn= index.js:1
+1 0 0
+cfi=internal/module.js
+cfn=require module.js:17
+calls=0 17
+1 15 2
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/express/lib/middleware/query.js
+fn= query.js:1
+1 0 0
+cfi=internal/module.js
+cfn=require module.js:17
+calls=0 17
+1 22 3
+
+fl=
+fn=ContextifyScript :0
+0 7 1
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/http-errors/index.js
+fn=forEachCode index.js:190
+190 7 1
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/http-errors/index.js
+fn=populateConstructorExports index.js:189
+189 0 0
+cfi=native array.js
+cfn=forEach native array.js:954
+calls=0 954
+189 7 1
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/http-errors/index.js
+fn= index.js:1
+1 0 0
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/http-errors/index.js
+cfn=populateConstructorExports index.js:189
+calls=0 189
+1 7 1
+
+fl=
+fn=binding :0
+0 7 1
+
+fl=crypto.js
+fn= crypto.js:1
+1 15 2
+cfi=
+cfn=binding :0
+calls=0 0
+1 7 1
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/etag/index.js
+fn= index.js:1
+1 0 0
+cfi=internal/module.js
+cfn=require module.js:17
+calls=0 17
+1 38 5
+
+fl=
+fn=get prototype :0
+0 7 1
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/mime/mime.js
+fn=Mime.define mime.js:21
+21 7 1
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/mime/mime.js
+fn= mime.js:1
+1 0 0
+cfi=
+cfn=get prototype :0
+calls=0 0
+1 7 1
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/mime/mime.js
+cfn=Mime.define mime.js:21
+calls=0 21
+1 7 1
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/depd/index.js
+fn=wrapfunction index.js:397
+397 15 2
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/send/index.js
+fn= index.js:1
+1 0 0
+cfi=internal/module.js
+cfn=require module.js:17
+calls=0 17
+1 83 11
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/depd/index.js
+cfn=wrapfunction index.js:397
+calls=0 397
+1 7 1
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/ipaddr.js/lib/ipaddr.js
+fn= ipaddr.js:54
+54 7 1
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/ipaddr.js/lib/ipaddr.js
+fn= ipaddr.js:1
+1 0 0
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/ipaddr.js/lib/ipaddr.js
+cfn= ipaddr.js:54
+calls=0 54
+1 7 1
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/ipaddr.js/lib/ipaddr.js
+fn= ipaddr.js:1
+1 0 0
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/ipaddr.js/lib/ipaddr.js
+cfn= ipaddr.js:1
+calls=0 1
+1 7 1
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/proxy-addr/index.js
+fn= index.js:1
+1 0 0
+cfi=internal/module.js
+cfn=require module.js:17
+calls=0 17
+1 15 2
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/express/lib/utils.js
+fn= utils.js:1
+1 0 0
+cfi=internal/module.js
+cfn=require module.js:17
+calls=0 17
+1 129 17
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/depd/index.js
+cfn=wrapfunction index.js:397
+calls=0 397
+1 7 1
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/express/lib/view.js
+fn= view.js:1
+1 0 0
+cfi=internal/module.js
+cfn=require module.js:17
+calls=0 17
+1 137 18
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/express/lib/application.js
+fn= application.js:1
+1 0 0
+cfi=internal/module.js
+cfn=require module.js:17
+calls=0 17
+1 343 45
+
+fl=buffer.js
+fn=slowToString buffer.js:405
+405 7 1
+
+fl=buffer.js
+fn=Buffer.toString buffer.js:472
+472 0 0
+cfi=buffer.js
+cfn=slowToString buffer.js:405
+calls=0 405
+472 7 1
+
+fl=native json.js
+fn=parse native json.js:61
+61 22 3
+
+fl=module.js
+fn=Module._extensions..json module.js:570
+570 0 0
+cfi=fs.js
+cfn=fs.readFileSync fs.js:494
+calls=0 494
+570 7 1
+cfi=native json.js
+cfn=parse native json.js:61
+calls=0 61
+570 15 2
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/mime-db/index.js
+fn= index.js:1
+1 0 0
+cfi=internal/module.js
+cfn=require module.js:17
+calls=0 17
+1 22 3
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/mime-types/index.js
+fn=forEachMimeType index.js:158
+158 15 2
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/mime-types/index.js
+fn=populateMaps index.js:154
+154 0 0
+cfi=native array.js
+cfn=forEach native array.js:954
+calls=0 954
+154 15 2
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/mime-types/index.js
+fn= index.js:1
+1 0 0
+cfi=internal/module.js
+cfn=require module.js:17
+calls=0 17
+1 22 3
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/mime-types/index.js
+cfn=populateMaps index.js:154
+calls=0 154
+1 15 2
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/accepts/index.js
+fn= index.js:1
+1 0 0
+cfi=internal/module.js
+cfn=require module.js:17
+calls=0 17
+1 53 7
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/type-is/index.js
+fn= index.js:1
+1 0 0
+cfi=internal/module.js
+cfn=require module.js:17
+calls=0 17
+1 7 1
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/express/lib/request.js
+fn= request.js:1
+1 0 0
+cfi=internal/module.js
+cfn=require module.js:17
+calls=0 17
+1 61 8
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/express/lib/response.js
+fn= response.js:1
+1 0 0
+cfi=internal/module.js
+cfn=require module.js:17
+calls=0 17
+1 15 2
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/serve-static/index.js
+fn= index.js:1
+1 0 0
+cfi=internal/module.js
+cfn=require module.js:17
+calls=0 17
+1 7 1
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/express/lib/express.js
+fn= express.js:1
+1 0 0
+cfi=internal/module.js
+cfn=require module.js:17
+calls=0 17
+1 450 59
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/express/index.js
+fn= index.js:1
+1 0 0
+cfi=internal/module.js
+cfn=require module.js:17
+calls=0 17
+1 450 59
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/chrome2calltree/node_modules/lodash/dist/lodash.js
+fn=forIn lodash.js:1996
+1996 7 1
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/chrome2calltree/node_modules/lodash/dist/lodash.js
+fn=functions lodash.js:2136
+2136 0 0
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/chrome2calltree/node_modules/lodash/dist/lodash.js
+cfn=forIn lodash.js:1996
+calls=0 1996
+2136 7 1
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/chrome2calltree/node_modules/lodash/dist/lodash.js
+fn=mixin lodash.js:5761
+5761 0 0
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/chrome2calltree/node_modules/lodash/dist/lodash.js
+cfn=functions lodash.js:2136
+calls=0 2136
+5761 7 1
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/chrome2calltree/node_modules/lodash/dist/lodash.js
+fn= lodash.js:6467
+6467 7 1
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/chrome2calltree/node_modules/lodash/dist/lodash.js
+fn=forOwn lodash.js:2073
+2073 0 0
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/chrome2calltree/node_modules/lodash/dist/lodash.js
+cfn= lodash.js:6467
+calls=0 6467
+2073 7 1
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/chrome2calltree/node_modules/lodash/dist/lodash.js
+fn= lodash.js:6547
+6547 7 1
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/chrome2calltree/node_modules/lodash/dist/lodash.js
+fn=forEach lodash.js:3224
+3224 0 0
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/chrome2calltree/node_modules/lodash/dist/lodash.js
+cfn= lodash.js:6547
+calls=0 6547
+3224 7 1
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/chrome2calltree/node_modules/lodash/dist/lodash.js
+fn=runInContext lodash.js:425
+425 0 0
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/chrome2calltree/node_modules/lodash/dist/lodash.js
+cfn=mixin lodash.js:5761
+calls=0 5761
+425 7 1
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/chrome2calltree/node_modules/lodash/dist/lodash.js
+cfn=forOwn lodash.js:2073
+calls=0 2073
+425 7 1
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/chrome2calltree/node_modules/lodash/dist/lodash.js
+cfn=forEach lodash.js:3224
+calls=0 3224
+425 7 1
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/chrome2calltree/node_modules/lodash/dist/lodash.js
+fn= lodash.js:10
+10 30 4
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/chrome2calltree/node_modules/lodash/dist/lodash.js
+cfn=runInContext lodash.js:425
+calls=0 425
+10 22 3
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/chrome2calltree/node_modules/lodash/dist/lodash.js
+fn= lodash.js:1
+1 0 0
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/chrome2calltree/node_modules/lodash/dist/lodash.js
+cfn= lodash.js:10
+calls=0 10
+1 53 7
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/chrome2calltree/index.js
+fn= index.js:1
+1 0 0
+cfi=internal/module.js
+cfn=require module.js:17
+calls=0 17
+1 99 13
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/memory-streams/node_modules/readable-stream/lib/_stream_readable.js
+fn= _stream_readable.js:1
+1 0 0
+cfi=internal/module.js
+cfn=require module.js:17
+calls=0 17
+1 7 1
+
+fl=module.js
+fn=Module._resolveLookupPaths module.js:300
+300 0 0
+cfi=path.js
+cfn=resolve path.js:1133
+calls=0 1133
+300 7 1
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/memory-streams/node_modules/readable-stream/readable.js
+fn= readable.js:1
+1 0 0
+cfi=internal/module.js
+cfn=require module.js:17
+calls=0 17
+1 38 5
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/memory-streams/lib/ReadableStream.js
+fn= ReadableStream.js:1
+1 0 0
+cfi=internal/module.js
+cfn=require module.js:17
+calls=0 17
+1 38 5
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/memory-streams/index.js
+fn= index.js:1
+1 0 0
+cfi=internal/module.js
+cfn=require module.js:17
+calls=0 17
+1 38 5
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/nodegrind/nodegrind.js
+fn= nodegrind.js:1
+1 0 0
+cfi=internal/module.js
+cfn=require module.js:17
+calls=0 17
+1 160 21
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/woothee/release/woothee.js
+fn= woothee.js:11
+11 7 1
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/woothee/release/woothee.js
+fn= woothee.js:1
+1 0 0
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/woothee/release/woothee.js
+cfn= woothee.js:11
+calls=0 11
+1 7 1
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/woothee/release/woothee.js
+fn= woothee.js:1
+1 0 0
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/woothee/release/woothee.js
+cfn= woothee.js:1
+calls=0 1
+1 7 1
+
+fl=events.js
+fn=_addListener events.js:210
+210 7 1
+
+fl=events.js
+fn=addListener events.js:274
+274 0 0
+cfi=events.js
+cfn=_addListener events.js:210
+calls=0 210
+274 7 1
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/express/lib/application.js
+fn=defaultConfiguration application.js:69
+69 0 0
+cfi=events.js
+cfn=addListener events.js:274
+calls=0 274
+69 7 1
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/express/lib/application.js
+fn=init application.js:56
+56 7 1
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/express/lib/application.js
+cfn=defaultConfiguration application.js:69
+calls=0 69
+56 7 1
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/express/lib/express.js
+fn=createApplication express.js:36
+36 0 0
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/express/lib/application.js
+cfn=init application.js:56
+calls=0 56
+36 15 2
+
+fl=
+fn=close :0
+0 7 1
+
+fl=fs.js
+fn=fs.closeSync fs.js:608
+608 0 0
+cfi=
+cfn=close :0
+calls=0 0
+608 7 1
+
+fl=module.js
+fn=stat module.js:23
+23 7 1
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/iconv-lite/lib/index.js
+fn= index.js:1
+1 0 0
+cfi=internal/module.js
+cfn=require module.js:17
+calls=0 17
+1 15 2
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/raw-body/index.js
+fn= index.js:1
+1 0 0
+cfi=internal/module.js
+cfn=require module.js:17
+calls=0 17
+1 30 4
+
+fl=zlib.js
+fn= zlib.js:1
+1 7 1
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/body-parser/lib/read.js
+fn= read.js:1
+1 0 0
+cfi=internal/module.js
+cfn=require module.js:17
+calls=0 17
+1 45 6
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/body-parser/lib/types/urlencoded.js
+fn= urlencoded.js:1
+1 0 0
+cfi=internal/module.js
+cfn=require module.js:17
+calls=0 17
+1 61 8
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/body-parser/index.js
+fn=loadParser index.js:132
+132 0 0
+cfi=internal/module.js
+cfn=require module.js:17
+calls=0 17
+132 68 9
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/body-parser/index.js
+fn=get index.js:122
+122 0 0
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/body-parser/index.js
+cfn=loadParser index.js:132
+calls=0 132
+122 68 9
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/express/lib/router/layer.js
+fn=Layer layer.js:33
+33 7 1
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/express/lib/router/index.js
+fn=use index.js:428
+428 0 0
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/express/lib/router/layer.js
+cfn=Layer layer.js:33
+calls=0 33
+428 7 1
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/express/lib/application.js
+fn=lazyrouter application.js:136
+136 0 0
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/express/lib/router/index.js
+cfn=use index.js:428
+calls=0 428
+136 7 1
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/express/lib/application.js
+fn=use application.js:186
+186 0 0
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/express/lib/application.js
+cfn=lazyrouter application.js:136
+calls=0 136
+186 7 1
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/express/lib/router/index.js
+fn=route index.js:491
+491 7 1
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/express/lib/application.js
+fn=app.(anonymous function) application.js:472
+472 0 0
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/express/lib/router/index.js
+cfn=route index.js:491
+calls=0 491
+472 7 1
+
+fl=child_process.js
+fn= child_process.js:1
+1 0 0
+cfi=bootstrap_node.js
+cfn=NativeModule.require bootstrap_node.js:419
+calls=0 419
+1 7 1
+
+fl=cluster.js
+fn= cluster.js:1
+1 7 1
+cfi=bootstrap_node.js
+cfn=NativeModule.require bootstrap_node.js:419
+calls=0 419
+1 22 3
+
+fl=net.js
+fn=listen net.js:1282
+1282 0 0
+cfi=bootstrap_node.js
+cfn=NativeModule.require bootstrap_node.js:419
+calls=0 419
+1282 38 5
+
+fl=net.js
+fn=Server.listen net.js:1327
+1327 0 0
+cfi=net.js
+cfn=listen net.js:1282
+calls=0 1282
+1327 38 5
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/express/lib/application.js
+fn=listen application.js:615
+615 7 1
+cfi=net.js
+cfn=Server.listen net.js:1327
+calls=0 1327
+615 38 5
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/app.js
+fn= app.js:1
+1 7 1
+cfi=internal/module.js
+cfn=require module.js:17
+calls=0 17
+1 671 88
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/express/lib/express.js
+cfn=createApplication express.js:36
+calls=0 36
+1 15 2
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/body-parser/index.js
+cfn=get index.js:122
+calls=0 122
+1 68 9
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/express/lib/application.js
+cfn=use application.js:186
+calls=0 186
+1 7 1
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/express/lib/application.js
+cfn=app.(anonymous function) application.js:472
+calls=0 472
+1 7 1
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/node_modules/express/lib/application.js
+cfn=listen application.js:615
+calls=0 615
+1 45 6
+
+fl=/usr/lib/node_modules/nodegrind/nodegrind.js
+fn=main nodegrind.js:100
+100 0 0
+cfi=/usr/lib/node_modules/nodegrind/nodegrind.js
+cfn=startCPU nodegrind.js:84
+calls=0 84
+100 0 0
+cfi=internal/module.js
+cfn=require module.js:17
+calls=0 17
+100 832 109
+
+fl=/usr/lib/node_modules/nodegrind/nodegrind.js
+fn= nodegrind.js:1
+1 0 0
+cfi=/usr/lib/node_modules/nodegrind/nodegrind.js
+cfn=main nodegrind.js:100
+calls=0 100
+1 832 109
+
+fl=_stream_readable.js
+fn=ReadableState _stream_readable.js:35
+35 7 1
+
+fl=_stream_readable.js
+fn=Readable _stream_readable.js:104
+104 0 0
+cfi=_stream_readable.js
+cfn=ReadableState _stream_readable.js:35
+calls=0 35
+104 7 1
+
+fl=internal/process/stdio.js
+fn=getStdout stdio.js:8
+8 0 0
+cfi=internal/process/stdio.js
+cfn=createWritableStdioStream stdio.js:134
+calls=0 134
+8 15 2
+
+fl=console.js
+fn= console.js:1
+1 0 0
+cfi=internal/process/stdio.js
+cfn=getStdout stdio.js:8
+calls=0 8
+1 15 2
+
+fl=bootstrap_node.js
+fn=get bootstrap_node.js:252
+252 0 0
+cfi=bootstrap_node.js
+cfn=NativeModule.require bootstrap_node.js:419
+calls=0 419
+252 15 2
+
+fl=net.js
+fn=Socket._writeGeneric net.js:655
+655 7 1
+
+fl=net.js
+fn=Socket._write net.js:723
+723 0 0
+cfi=net.js
+cfn=Socket._writeGeneric net.js:655
+calls=0 655
+723 7 1
+
+fl=_stream_writable.js
+fn=doWrite _stream_writable.js:299
+299 0 0
+cfi=net.js
+cfn=Socket._write net.js:723
+calls=0 723
+299 7 1
+
+fl=_stream_writable.js
+fn=writeOrBuffer _stream_writable.js:269
+269 0 0
+cfi=_stream_writable.js
+cfn=doWrite _stream_writable.js:299
+calls=0 299
+269 7 1
+
+fl=_stream_writable.js
+fn=Writable.write _stream_writable.js:199
+199 0 0
+cfi=_stream_writable.js
+cfn=writeOrBuffer _stream_writable.js:269
+calls=0 269
+199 7 1
+
+fl=net.js
+fn=Socket.write net.js:646
+646 0 0
+cfi=_stream_writable.js
+cfn=Writable.write _stream_writable.js:199
+calls=0 199
+646 7 1
+
+fl=console.js
+fn=Console.log console.js:42
+42 7 1
+cfi=net.js
+cfn=Socket.write net.js:646
+calls=0 646
+42 7 1
+
+fl=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/app.js
+fn= app.js:109
+109 7 1
+cfi=bootstrap_node.js
+cfn=get bootstrap_node.js:252
+calls=0 252
+109 15 2
+cfi=console.js
+cfn=Console.log console.js:42
+calls=0 42
+109 15 2
+
+fl=events.js
+fn=g events.js:287
+287 7 1
+cfi=/home/isucon/app/isucon-phh-AC3ROZ-nodejs/app.js
+cfn= app.js:109
+calls=0 109
+287 38 5
+
+fl=events.js
+fn=emitNone events.js:84
+84 0 0
+cfi=events.js
+cfn=g events.js:287
+calls=0 287
+84 45 6
+
+fl=events.js
+fn=emit events.js:136
+136 0 0
+cfi=events.js
+cfn=emitNone events.js:84
+calls=0 84
+136 45 6
+
+fl=net.js
+fn=emitListeningNT net.js:1275
+1275 0 0
+cfi=events.js
+cfn=emit events.js:136
+calls=0 136
+1275 45 6
+
+fl=internal/process/next_tick.js
+fn=_combinedTickCallback next_tick.js:65
+65 0 0
+cfi=net.js
+cfn=emitListeningNT net.js:1275
+calls=0 1275
+65 45 6
+
+fl=internal/process/next_tick.js
+fn=_tickCallback next_tick.js:87
+87 0 0
+cfi=internal/process/next_tick.js
+cfn=_combinedTickCallback next_tick.js:65
+calls=0 65
+87 45 6
+
+fl=module.js
+fn=Module.runMain module.js:588
+588 0 0
+cfi=module.js
+cfn=Module._load module.js:398
+calls=0 398
+588 832 109
+cfi=internal/process/next_tick.js
+cfn=_tickCallback next_tick.js:87
+calls=0 87
+588 45 6
+
+fl=bootstrap_node.js
+fn=run bootstrap_node.js:375
+375 0 0
+cfi=module.js
+cfn=Module.runMain module.js:588
+calls=0 588
+375 877 115
+
+fl=bootstrap_node.js
+fn=startup bootstrap_node.js:12
+12 0 0
+cfi=bootstrap_node.js
+cfn=run bootstrap_node.js:375
+calls=0 375
+12 877 115
+
+fl=bootstrap_node.js
+fn= bootstrap_node.js:10
+10 0 0
+cfi=bootstrap_node.js
+cfn=startup bootstrap_node.js:12
+calls=0 12
+10 877 115
+
+fl=
+fn=(program) :0
+0 91 12
+
+fl=
+fn=(garbage collector) :0
+0 30 4
+
+fl=
+fn=(root) :0
+0 0 0
+cfi=bootstrap_node.js
+cfn= bootstrap_node.js:10
+calls=0 10
+0 877 115
+cfi=
+cfn=(program) :0
+calls=0 0
+0 91 12
+cfi=
+cfn=(garbage collector) :0
+calls=0 0
+0 30 4
+
