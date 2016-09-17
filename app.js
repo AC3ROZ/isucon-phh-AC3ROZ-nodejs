@@ -9,30 +9,7 @@ const pmysql = require('promise-mysql');
 
 const woothee = require('woothee');
 
-function html(){ return `<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="/index.css">
-    <title>PHH アクセスカウンター</title>
-    <script>
-    window.onload = function(){
-        domain = document.getElementById("domain").innerText;
-        document.getElementById("domain").innerText = Object.keys(JSON.parse(domain)).length;
-        os= document.getElementById("os").innerText;
-        document.getElementById("os").innerText = Object.keys(JSON.parse(os)).length;
-        browser = document.getElementById("browser").innerText;
-        document.getElementById("browser").innerText = Object.keys(JSON.parse(browser)).length;
-    }
-  </script>
-  </head>
-  <body>
-
-    <h1>PHH アクセスカウンター</h1>
-
-    <p>これまで、<b id="domain">${JSON.stringify(domains)}</b>個のドメイン、<b id="browser">${JSON.stringify(bro)}</b>種類のブラウザ、<b id="os">${JSON.stringify(oss)}</b>種類の OS のアクセスがありました。</p>
-  </body>
-</html>` };
+function html(){ return `<!DOCTYPE html><html> <head> <meta charset="UTF-8"> <link rel="stylesheet" href="/index.css"> <title>PHH アクセスカウンター</title> <script> window.onload = function(){ domain = document.getElementById("domain").innerText; document.getElementById("domain").innerText = Object.keys(JSON.parse(domain)).length; os= document.getElementById("os").innerText; document.getElementById("os").innerText = Object.keys(JSON.parse(os)).length; browser = document.getElementById("browser").innerText; document.getElementById("browser").innerText = Object.keys(JSON.parse(browser)).length; } </script> </head> <body> <h1>PHH アクセスカウンター</h1> <p>これまで、<b id="domain">${JSON.stringify(domains)}</b>個のドメイン、<b id="browser">${JSON.stringify(bro)}</b>種類のブラウザ、<b id="os">${JSON.stringify(oss)}</b>種類の OS のアクセスがありました。</p> </body></html>` };
 var app = express();
 var dict = [];
 var domains = {};
